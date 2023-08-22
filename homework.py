@@ -85,7 +85,9 @@ def test_find_suitable_user():
 def readable_func_name(func, *args):
     name = func.__name__.replace("_", " ").title()
     arg_string = ', '.join([*args])
-    return f"{name} [{arg_string}]"
+    output = f"{name} [{arg_string}]"
+    print(f"\nproduced a readable function name: \n{output}")
+    return output
 
 
 def test_readable_function():
